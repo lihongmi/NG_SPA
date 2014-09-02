@@ -1,0 +1,7 @@
+
+<h1>Angular Animations Shenanigans</h1>
+<h2>Home</h2>
+
+<a href="#/about" class="btn btn-danger btn-lg">about</a>
+<a href="#/product" class="btn btn-danger btn-lg">product</a>
+<a href="#/shop" class="btn btn-primary btn-lg">shop</a>

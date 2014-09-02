@@ -1,0 +1,72 @@
+/**基础的样式。*/
+.page        {
+    position:absolute; 
+    top:0;  
+    bottom:0; 
+    width:100%; 
+
+    padding-top:200px;
+    text-align:center;
+}
+.page h1     { font-size:60px; }
+.page a     { margin-top:50px; }
+
+
+.page-about         { background:#00D0BC; color:#00907c; }
+.page-product   { background:#E59400; color:#a55400; }
+.page-cart  { background:#ffa6bb; color:#9e0000; }
+
+.ng-leave{
+z-index:8888
+}
+.ng-enter{
+z-index:6666
+}
+
+.page-about.ng-enter,.page-cart.ng-enter{  
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  -moz-animation-name: flipInY;
+  -ms-animation-name: flipInY;
+  -o-animation-name: flipInY;
+  animation-name: flipInY;
+}
+
+.page-product.ng-enter{
+
+  -webkit-animation-name: easeInLeft;
+  -moz-animation-name: easeInLeft;
+  -ms-animation-name: easeInLeft;
+  -o-animation-name: easeInLeft;
+  animation-name: easeInLeft;
+
+}
+.page-about.ng-leave,.page-cart.ng-leave{  
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipOutY;
+  -moz-animation-name: flipOutY;
+  -ms-animation-name: flipOutY;
+  -o-animation-name: flipOutY;
+  animation-name: flipOutY;
+}
+
+.page-product.ng-leave{
+
+  -webkit-animation-name: easeOutLeft;
+  -moz-animation-name: easeOutLeft;
+  -ms-animation-name: easeOutLeft;
+  -o-animation-name: easeOutLeft;
+  animation-name: easeOutLeft;
+
+}
+
+
+
